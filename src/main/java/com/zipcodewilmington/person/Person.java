@@ -14,6 +14,7 @@ public class Person {
 
     public Person() {
         this.name = "";
+        this.age = Integer.MAX_VALUE;
     }
 
     public Person(int age) {
@@ -32,6 +33,12 @@ public class Person {
         this.yearBorn = yearBorn;
         this.monthBorn = monthBorn;
         this.numOfChildren = numOfChildren;
+    }
+
+
+    public Person(String name, Integer age) {
+        this.name = name;
+        this.age = age;
     }
 
     public void setName(String name) {

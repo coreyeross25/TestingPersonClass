@@ -102,7 +102,7 @@ public class TestPerson {
         Integer expected = 5;
 
         // When
-        person.setNumofSiblings(expected);
+        person.setNumOfSiblings(expected);
 
         // Then
         Integer actual = person.getNumOfSiblings();

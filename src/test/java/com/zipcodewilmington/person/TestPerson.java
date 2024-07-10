@@ -95,4 +95,73 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetNumOfSiblings() {
+        // Given
+        Person person = new Person();
+        Integer expected = 5;
+
+        // When
+        person.setNumofSiblings(expected);
+
+        // Then
+        Integer actual = person.getNumOfSiblings();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetYearBorn() {
+        // Given
+        Person person = new Person();
+        Integer expected = 5;
+
+        // When
+        person.setYearBorn(expected);
+
+        // Then
+        Integer actual = person.getYearBorn();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetNumOfChildren() {
+        // Given
+        Person person = new Person();
+        Integer expected = 5;
+
+        // When
+        person.setNumOfChildren(expected);
+
+        // Then
+        Integer actual = person.getNumOfChildren();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetFathersName() {
+        // Given
+        Person person = new Person();
+        String expected = "Dylan";
+
+        // When
+        person.setFathersName(expected);
+        String actual = person.getFathersName();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetMonthBorn() {
+        // Given
+        Person person = new Person();
+        String expected = "October";
+
+        // When
+        person.setMonthBorn(expected);
+        String actual = person.getMonthBorn();
+
+        // Then
+        Assert.assertEquals(expected, actual);
+    }
 }
